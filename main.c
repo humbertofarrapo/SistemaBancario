@@ -11,8 +11,8 @@ int main()
 	char cpf[12];
 
 	verde();
-	entradastr("Bem vindo ao IFBank");
-	entradaint("2023");
+	entradastr("Bem vindo ao IFBank 2023");
+	entradaint("Bem vindo ao IFBank 2023");
 	printf(". Pressione qualquer tecla para continuar.\n");
 	getchar();
 
