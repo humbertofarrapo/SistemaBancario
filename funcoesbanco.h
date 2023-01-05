@@ -1,5 +1,5 @@
-
-static float saldo = 2023.00;
+//add mais funcoes
+static float saldo = 2023.00; //valor fixado do saldo
 
 void verde();
 
