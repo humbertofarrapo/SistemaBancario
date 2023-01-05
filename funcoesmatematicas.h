@@ -25,7 +25,7 @@ int multiplo(int x, int y);
 
 int primo(int x);
 
-int* divisores(int x);
+int *divisores(int x);
 
 char *entradastr(char *titulo);
 
