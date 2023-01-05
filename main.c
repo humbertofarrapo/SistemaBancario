@@ -41,7 +41,7 @@ int main()
     		default:
 				vermelho();
       			printf("Digite uma opção válida!\n");
-    	}
+    }
 	} while(opcao);
 	return 0;
 }
