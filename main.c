@@ -3,7 +3,8 @@
 #include "funcoesmatematicas.h"
 #include "funcoesbanco.h"
 //FALTA MANIPULAR ARQUIVOS + ADICIONAR E MELHORAR FUNCOES
-int main() {
+int main()
+{
 	FILE *fp;
 	int opcao = 1;
   	float deposito, saque;
@@ -27,20 +28,20 @@ int main() {
 		{
     		case 1:
     			depositar(deposito);
-      		break;
+      			break;
     		case 2:
       			sacar(saque);
-      		break;
+      			break;
     		case 3:
       			checasaldo(saldo);
-      		break;
+      			break;
     		case 0:
       			printf("Obrigado por utilizar o IFBank! Até mais!\n");
-      		break;
+      			break;
     		default:
 				vermelho();
       			printf("Digite uma opção válida!\n");
     	}
-	}while (opcao);
+	} while(opcao);
 	return 0;
 }
