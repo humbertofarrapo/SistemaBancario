@@ -113,7 +113,7 @@ float divisao(float x, float y)
 {
 	if (x == 0 || y == 0)
 	{
-		printf("NÃ£o Ã© possivel dividir por zero!\n");
+		printf("Não é possivel dividir por zero!\n");
 	}
 	else
 	{
