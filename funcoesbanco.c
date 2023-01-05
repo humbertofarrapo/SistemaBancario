@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "funcoesmatematicas.h"
 
-static float saldo = 2023.00;
+static float saldo = 2023.00; //valor fixado do saldo
 
 void verde()
 { 
@@ -14,23 +14,27 @@ void vermelho()
 	printf("\033[1;31m"); 
 }
 
-int validarsenha(char senha[]) {
-  int digito = 0, cont = 0;
+int validarsenha(char senha[])
+{
+	int digito = 0, cont = 0;
 
-  for (int i = 0; senha[i] != '\0'; ++i) {
-    	if (strlen(senha) == 4) {
-      		cont = 1;
+  	for (int i = 0; senha[i] != '\0'; ++i)
+	{
+		if (strlen(senha) == 4) {
+			cont = 1;
 		}
     	else if ((senha[i] >= '0') && (senha[i] <= '9'))
 		{
         	digito++;
    	 	}
 	}
-    if ((cont = 1) && (digito == 3)) {
+    if ((cont = 1) && (digito == 3))
+	{
     	return 1;
     } 
-	else{
-      return 0;
+	else
+	{
+      	return 0;
 	}
 }
 
@@ -40,16 +44,18 @@ void logincpf(char cp_f[])
     	printf("Informe seu CPF: \n");
     	scanf("%s", cp_f);
 		
-    	if((validarcpf(cp_f) == 1)){
-      			printf("Login realizado com sucesso! :)\n");
-      			system("clear");
+    	if((validarcpf(cp_f) == 1))
+		{
+      		printf("Login realizado com sucesso! :)\n");
+      		system("clear");
     	} 
-		else if ((validarcpf(cp_f) == 0)) {
+		else if ((validarcpf(cp_f) == 0))
+		{
 			vermelho();
       		printf("Houve um erro! :(\n");
       		return 0;
     	}
-	} while ((validarcpf(cp_f) != 1));
+	} while(validarcpf(cp_f) != 1);
 }
 
 void opbanco()
