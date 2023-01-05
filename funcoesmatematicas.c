@@ -215,7 +215,7 @@ char *entradaint(char *titulo)
 {
 	for (int i = 0; titulo[i] != '\0'; i++)
 	{
-		if (isalpha(titulo[i]) == 0)
+		if (isdigit(titulo[i]) != 0)
 		{
 			printf("%c", titulo[i]);
 		}
