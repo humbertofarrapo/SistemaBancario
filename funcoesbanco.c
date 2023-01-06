@@ -1,8 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "funcoesmatematicas.h"
 
 static float saldo = 2023.00;
+
+void mensagem()
+{
+	entradastr("Olá, seja bem vindo ao IFBank versão 2023"); //retorna o texto de um vetor de caracteres sem números
+	entradaint("Olá, seja bem vindo ao IFBank versão 2023"); //retorna os numeros de um vetor de caracteres sem o texto
+	printf("!\n\nPara continuar, pressione qualquer tecla.");
+	getchar();
+}
 
 void verde()
 {
@@ -16,48 +25,60 @@ void vermelho()
 
 int validarsenha(char senha[])
 {
-	int digito = 0, cont = 0;
+	int valido = 0, invalido = 0;
 
-	for (int i = 0; senha[i] != '\0'; ++i)
+	if (strlen(senha) != 4)
 	{
-		if (strlen(senha) == 4)
+		invalido = 1;
+	}
+	else{
+		for (int i = 0; i < strlen(senha); i++)
 		{
-			cont = 1;
-		}
-		else if ((senha[i] >= '0') && (senha[i] <= '9'))
-		{
-			digito++;
+			if ((senha[i] >= '0') && (senha[i] <= '9'))
+			{
+				valido = 1;
+			}
 		}
 	}
-
-	if ((cont = 1) && (digito == 3))
-	{
-		return 1;
-	}
-	else
+	if(invalido == 1)
 	{
 		return 0;
 	}
+	else
+	{
+		return 1;
+	}
 }
 
-void logincpf(char cp_f[])
+void telalogin()
 {
-	do {
-		printf("Informe seu CPF: \n");
-		scanf("%s", cp_f);
+    	char cpf[12];
+    	char senha[5];
+    	int login_efetuado = 0;
+	
+	system("clear");
+   	 while(!login_efetuado)
+	 {
+		verde();
+       		printf("Digite seu CPF: ");
+        	scanf("%s", cpf);
 
-		if ((validarcpf(cp_f) == 1))
+        	printf("Digite seu senha de 4 dígitos: ");
+        	scanf("%s", senha);
+
+        	if (validarcpf(cpf) == 1 && validarsenha(senha) == 1)
 		{
-			printf("Login realizado com sucesso! :)\n");
 			system("clear");
-		}
-		else if ((validarcpf(cp_f) == 0))
-		{
+            		printf("Login efetuado com sucesso! :)\n\n");
+            		login_efetuado = 1;
+        	}
+        	else
+		{	
+			system("clear");
 			vermelho();
-			printf("Houve um erro! :(\n");
-			return 0;
+            		printf("DADOS INVALIDOS!\n\n");    
 		}
-	} while ((validarcpf(cp_f) != 1));
+	}
 }
 
 void opbanco()
@@ -77,7 +98,7 @@ float depositar(float valorDeposito)
 	scanf("%f", &valorDeposito);
 	saldo = soma(saldo, valorDeposito);
 	system("clear");
-	printf("DepÃ³sito realizado com sucesso!\n\n");
+	printf("Depósito realizado com sucesso!\n\n");
 	return saldo;
 }
 
