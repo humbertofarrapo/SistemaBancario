@@ -11,18 +11,13 @@ typedef struct
 
 int main()
 {
-	FILE *arq;
+	FILE *arq = fopen("alteracoesBancarias.txt", "w+");;
 	int opcao = 1;
-	Usuario usuario, deposito, saque;
+	Usuario usuarioPadrao, deposito, saque;
 	
 	verde();
-	entradastr("Bem vindo ao IFBank 2023");
-	entradaint("Bem vindo ao IFBank 2023");
-	printf(". Pressione qualquer tecla para continuar.\n");
-	getchar();
-
-	system("clear");
-	//logincpf(cpf);
+	mensagem();
+	telalogin();
 
 	do {
 		opbanco();
@@ -32,16 +27,17 @@ int main()
 		switch (opcao)
 		{
 			case 1:
-				depositar(usuario.deposito);
+				fprintf(arq, "%f", depositar(usuarioPadrao.deposito));
 				break;
 			case 2:
-				sacar(usuario.saque);
+				fprintf(arq, "%f", sacar(usuarioPadrao.saque));
 				break;
 			case 3:
 				checasaldo(saldo);
 				break;
 			case 0:
 				printf("Obrigado por utilizar o IFBank! Até mais!\n");
+				fclose(arq);
 				break;
 			default:
 				vermelho();
