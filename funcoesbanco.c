@@ -57,8 +57,8 @@ void telalogin()
     	int login_efetuado = 0;
 	
 	system("clear");
-   	 while(!login_efetuado)
-	 {
+	while(!login_efetuado)
+	{
 		verde();
        		printf("Digite seu CPF: ");
         	scanf("%s", cpf);
