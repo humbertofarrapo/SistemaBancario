@@ -1,11 +1,13 @@
-//add mais funcoes
+
 static float saldo = 2023.00; //valor fixado do saldo
+
+void mensagem();
 
 void verde();
 
 void vermelho();
 
-void logincpf(char cp_f[]);//melhorar
+void telalogin();
 
 int validasenha(char senha[]);
 
