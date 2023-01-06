@@ -31,7 +31,8 @@ int validarsenha(char senha[])
 	{
 		invalido = 1;
 	}
-	else{
+	else
+	{
 		for (int i = 0; i < strlen(senha); i++)
 		{
 			if ((senha[i] >= '0') && (senha[i] <= '9'))
