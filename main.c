@@ -2,14 +2,19 @@
 #include <stdlib.h>
 #include "funcoesmatematicas.h"
 #include "funcoesbanco.h"
-	//FALTA MANIPULAR ARQUIVOS + ADICIONAR E MELHORAR FUNCOES
+
+typedef struct
+{
+	float deposito;
+	float saque;
+} Usuario;
+
 int main()
 {
-	FILE * fp;
+	FILE *arq;
 	int opcao = 1;
-	float deposito, saque;
-	char cpf[12];
-
+	Usuario usuario, deposito, saque;
+	
 	verde();
 	entradastr("Bem vindo ao IFBank 2023");
 	entradaint("Bem vindo ao IFBank 2023");
@@ -17,7 +22,7 @@ int main()
 	getchar();
 
 	system("clear");
-	logincpf(cpf);
+	//logincpf(cpf);
 
 	do {
 		opbanco();
@@ -27,10 +32,10 @@ int main()
 		switch (opcao)
 		{
 			case 1:
-				depositar(deposito);
+				depositar(usuario.deposito);
 				break;
 			case 2:
-				sacar(saque);
+				sacar(usuario.saque);
 				break;
 			case 3:
 				checasaldo(saldo);
