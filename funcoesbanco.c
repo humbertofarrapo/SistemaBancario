@@ -1,26 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "funcoesbanco.h"
 #include "funcoesmatematicas.h"
-
-static float saldo = 2023.00;
 
 void mensagem()
 {
-	entradastr("Olá, seja bem vindo ao IFBank versão 2023"); //retorna o texto de um vetor de caracteres sem números
-	entradaint("Olá, seja bem vindo ao IFBank versão 2023"); //retorna os numeros de um vetor de caracteres sem o texto
+	entradastr("Olá, seja bem vindo ao IFBank"); //retorna o texto de um vetor de caracteres sem números
+	entradaint("Olá, seja bem vindo ao IFBank"); //retorna os numeros de um vetor de caracteres sem o texto
 	printf("!\n\nPara continuar, pressione qualquer tecla.");
 	getchar();
 }
 
+void azul()
+{
+	printf("\x1b[1;34m");
+}
+
 void verde()
 {
-	printf("\033[1;32m");
+	printf("\x1b[1;32m");
 }
 
 void vermelho()
 {
-	printf("\033[1;31m");
+	printf("\x1b[1;31m");
 }
 
 int validarsenha(char senha[])
