@@ -3,6 +3,8 @@ static float saldo = 2023.00; //valor fixado do saldo
 
 void mensagem();
 
+void azul();
+
 void verde();
 
 void vermelho();
