@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <ctype.h>
+#include "funcoesmatematicas.h"
 
 int validarcpf(char cp_f[])
 {
