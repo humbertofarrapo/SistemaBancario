@@ -1,3 +1,8 @@
+/******************************************************************
+ funcoesmatematicas.h;
+ Cabecalhos das funcoes implementadas no modulo funcoesmatematicas.c,
+ que servem para realizar diversos calculos matematicas e validacao.
+******************************************************************/
 
 int validarcpf (char c_pf[]);
 
