@@ -4,7 +4,7 @@
 #include "funcoesbanco.h"
 #include "funcoesmatematicas.h"
 
-void mensagem()
+void saudacao()
 {
 	entradastr("Olá, seja bem vindo ao IFBank"); //retorna o texto de um vetor de caracteres sem números
 	entradaint("Olá, seja bem vindo ao IFBank"); //retorna os numeros de um vetor de caracteres sem o texto
