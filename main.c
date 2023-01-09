@@ -16,7 +16,7 @@ int main()
 	Usuario usuarioPadrao, deposito, saque;
 	
 	verde();
-	mensagem();
+	saudacao();
 	telalogin();
 
 	do {
