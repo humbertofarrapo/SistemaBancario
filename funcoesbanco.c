@@ -6,8 +6,8 @@
 
 void saudacao()
 {
-	entradastr("Olá, seja bem vindo ao IFBank"); //retorna o texto de um vetor de caracteres sem números
-	entradaint("Olá, seja bem vindo ao IFBank"); //retorna os numeros de um vetor de caracteres sem o texto
+	entradastr("Olá, seja bem vindo ao IFBank v_2022"); //retorna o texto de um vetor de caracteres sem números
+	entradaint("Olá, seja bem vindo ao IFBank v_2022"); //retorna os numeros de um vetor de caracteres sem o texto
 	printf("!\n\nPara continuar, pressione qualquer tecla.");
 	getchar();
 }
