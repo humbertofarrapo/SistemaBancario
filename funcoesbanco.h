@@ -1,7 +1,12 @@
+/******************************************************************
+ funcoesbanco.h;
+ Cabecalhos das funcoes implementadas no modulo funcoesbanco.c,
+ que servem para realizar operacoes bancarias e formatacoes do sistema.
+******************************************************************/
 
 static float saldo = 2023.00; //valor fixado do saldo
 
-void mensagem();
+void saudacao();
 
 void azul();
 
