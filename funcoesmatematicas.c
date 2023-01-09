@@ -7,6 +7,7 @@
 int validarcpf(char cp_f[])
 {
 	int i, j, digito1 = 0, digito2 = 0;
+	
 	if (strlen(cp_f) != 11)
 	{
 		return 0;
@@ -200,6 +201,7 @@ char *entradastr(char *titulo)
 			printf("%c", titulo[i]);
 		}
 	}
+	return 0;
 }
 
 char *entradaint(char *titulo)
@@ -211,4 +213,5 @@ char *entradaint(char *titulo)
 			printf("%c", titulo[i]);
 		}
 	}
+	return 0;
 }
