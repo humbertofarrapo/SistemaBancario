@@ -33,6 +33,7 @@ int main()
 				fprintf(arq, "%f", sacar(usuarioPadrao.saque));
 				break;
 			case 3:
+				verde();
 				checasaldo(saldo);
 				break;
 			case 0:
