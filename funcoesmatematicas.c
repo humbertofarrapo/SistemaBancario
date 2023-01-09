@@ -24,7 +24,6 @@ int validarcpf(char cp_f[])
 		{
 			digito1 += (cp_f[i] - 48) *j;
 		}
-
 		digito1 %= 11;
 		if (digito1 < 2)
 		{
@@ -34,7 +33,6 @@ int validarcpf(char cp_f[])
 		{
 			digito1 = 11 - digito1;
 		}
-
 		if ((cp_f[9] - 48) != digito1)
 		{
 			return 0;
@@ -48,7 +46,6 @@ int validarcpf(char cp_f[])
 
 			digito2 %= 11;
 		}
-
 		if (digito2 < 2)
 		{
 			digito2 = 0;
@@ -57,42 +54,36 @@ int validarcpf(char cp_f[])
 		{
 			digito2 = 11 - digito2;
 		}
-
 		if ((cp_f[10] - 48) != digito2)
 		{
 			return 0;
 		}
 	}
-
 	return 1;
 }
 
 float mediaa(float notas[], int tam)
 {
 	float media, soma = 0;
-
+	
 	for (int i = 0; i < tam; i++)
 	{
 		soma = soma + notas[i];
 	}
-
 	media = (float) soma / tam;
-
 	return media;
 }
 
 float mediap(float notas[], float pesos[], int tam)
 {
 	float media, peso = 0, soma = 0;
-
+	
 	for (int i = 0; i < tam; i++)
 	{
 		soma = soma + (notas[i] *pesos[i]);
 		peso = peso + pesos[i];
 	}
-
 	media = (float) soma / peso;
-
 	return media;
 }
 
@@ -166,7 +157,7 @@ int primo(int x)
 {
 	int i;
 	int resultado = 0;
-
+	
 	for (i = 2; i <= x / 2; i++)
 	{
 		if (x % i == 0)
@@ -175,7 +166,6 @@ int primo(int x)
 			break;
 		}
 	}
-
 	if (resultado == 0)
 	{
 		return 1;
@@ -198,8 +188,7 @@ int *divisores(int x)
 			vetor[ind++] = i;
 		}
 	}
-
-	return (vetor);
+	return vetor;
 }
 
 char *entradastr(char *titulo)
