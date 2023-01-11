@@ -1,27 +1,27 @@
-/******************************************************************
+/*********************************************************************
  funcoesbanco.h;
  Cabecalhos das funcoes implementadas no modulo funcoesbanco.c,
  que servem para realizar operacoes bancarias e formatacoes na interface.
-******************************************************************/
+*********************************************************************/
 
-static float saldo = 2023.00; //valor fixado do saldo
+static float saldo = 2022.00; //Valor fixado do saldo;
 
-void saudacao();
+void saudacao(); //Exibe a mensagem de inicio;
 
-void azul();
+void azul(); //Colore o texto em azul;
 
-void verde();
+void verde(); //Colore o texto em verde;
 
-void vermelho();
+void vermelho(); //Colore o texto em vermelho;
 
-void telalogin();
+int validasenha(char *senha); //Valida uma senha (string) recebido em 0 ou 1;
 
-int validasenha(char senha[]);
+void telalogin(); //Exibe a interface de login;
 
-void opbanco();
+void opbanco(); //Exibe a interface de menu de opcoes;
 
-float depositar(int valorDeposito);
+float depositar(int valorDeposito); //Realiza a operacao de deposito;
 
-float sacar(int valorSaque);
+float sacar(int valorSaque); //Realiza a operacao de saque;
 
-void checasaldo(int valorSaldo);
+void checasaldo(int valorSaldo); //Exibe o saldo disponivel.
