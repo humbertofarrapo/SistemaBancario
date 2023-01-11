@@ -27,7 +27,7 @@ void vermelho()
 	printf("\x1b[1;31m");
 }
 
-int validarsenha(char senha[])
+int validarsenha(char *senha)
 {
 	int valido = 0, invalido = 0;
 
