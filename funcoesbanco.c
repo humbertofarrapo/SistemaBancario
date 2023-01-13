@@ -88,12 +88,12 @@ void telalogin()
 void opbanco()
 {
 	printf("---------------IFBANK---------------\n\n");
-	printf("Selecione a opção desejada dentre as exibidas abaixo: \n");
+	printf("Selecione a opcao desejada dentre as exibidas abaixo: \n");
 	printf("1. DEPOSITO\n");
 	printf("2. SAQUE\n");
 	printf("3. SALDO\n");
 	printf("0. SAIR\n\n");
-	printf("Opção selecionada: ");
+	printf("Opcao selecionada: ");
 }
 
 float depositar(float valorDeposito)
@@ -118,5 +118,5 @@ float sacar(float valorSaque)
 
 void checasaldo()
 {
-	printf("Seu salto atual é de: R$%.2f.\n\n", saldo);
+	printf("Seu salto atual eh de: R$%.2f.\n\n", saldo);
 }
