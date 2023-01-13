@@ -11,9 +11,10 @@ typedef struct
 
 int main()
 {
-	FILE *arq = fopen("alteracoesBancarias.txt", "w+");;
-	int opcao = 1;
+	FILE *arq = fopen("saldos.txt", "w+"); //Grava no txt, os saldos apos cada interacao.
 	Usuario usuarioPadrao, deposito, saque;
+	
+	int opcao = 1;
 	
 	verde();
 	saudacao();
@@ -42,7 +43,6 @@ int main()
 				printf("Obrigado por utilizar o IFBank! Até mais!\n");
 				break;
 			default:
-				vermelho();
 				printf("Digite uma opção válida!\n");
 		}
 	} while (opcao);
