@@ -19,12 +19,12 @@ void aviso()
 
 void verde()
 {
-	printf("COLOR 02");
+	system("COLOR 02");
 }
 
 void vermelho()
 {
-	printf("COLOR 04");
+	system("COLOR 04");
 }
 
 int validarsenha(char *senha)
@@ -68,7 +68,7 @@ void telalogin()
        		printf("Digite seu CPF: ");
         	scanf("%s", cpf);
 
-        	printf("Digite seu senha de 4 dígitos: ");
+        	printf("Digite sua senha de 4 dígitos: ");
         	scanf("%s", senha);
 
         	if (validarcpf(cpf) == 1 && validarsenha(senha) == 1)
@@ -87,12 +87,12 @@ void telalogin()
 
 void opbanco()
 {
-	printf("---------------IFBANK---------------\n\n");
-	printf("Selecione a opcao desejada dentre as exibidas abaixo: \n");
+	printf("***************IFBANK***************\n");
 	printf("1. DEPOSITO\n");
 	printf("2. SAQUE\n");
 	printf("3. SALDO\n");
-	printf("0. SAIR\n\n");
+	printf("0. SAIR\n");
+	printf("************************************\n");
 	printf("Opcao selecionada: ");
 }
 
@@ -118,5 +118,5 @@ float sacar(float valorSaque)
 
 void checasaldo()
 {
-	printf("Seu salto atual eh de: R$%.2f.\n\n", saldo);
+	printf("Seu salto atual eh de: R$ %.2f.\n\n", saldo);
 }
