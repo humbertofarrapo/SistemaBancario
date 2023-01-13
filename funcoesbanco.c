@@ -80,7 +80,6 @@ void telalogin()
         	else
 		{	
 			system("clear");
-			vermelho();
             		printf("DADOS INVALIDOS!\n\n");    
 		}
 	}
