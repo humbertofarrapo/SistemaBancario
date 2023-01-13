@@ -14,7 +14,7 @@ void aviso()
 {
 	printf("!\n\nComo esta eh a versao 2_2022 do IFBank, disponibilizamos um saldo de R$ 2022,00 para voce!\n\n");
 	printf("Para continuar, pressione qualquer tecla.");
-	getch();
+	getchar();
 }
 
 void verde()
