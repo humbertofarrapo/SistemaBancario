@@ -37,9 +37,9 @@ int main()
 				checasaldo(saldo);
 				break;
 			case 0:
+				fclose(arq);
 				vermelho();
 				printf("Obrigado por utilizar o IFBank! Até mais!\n");
-				fclose(arq);
 				break;
 			default:
 				vermelho();
