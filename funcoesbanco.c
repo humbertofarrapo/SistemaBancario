@@ -117,7 +117,7 @@ float sacar(float valorSaque)
 	return saldo;
 }
 
-void checasaldo(float valorSaldo)
+void checasaldo()
 {
 	printf("Seu salto atual é de: R$%.2f.\n\n", saldo);
 }
