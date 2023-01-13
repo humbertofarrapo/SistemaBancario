@@ -8,7 +8,7 @@ static float saldo = 2022.00; //Valor fixado do saldo;
 
 void saudacao(); //Exibe a mensagem de inicio;
 
-void azul(); //Colore o texto em azul;
+void aviso(); //Exibe a mensagem de aviso;
 
 void verde(); //Colore o texto em verde;
 
@@ -24,4 +24,4 @@ float depositar(int valorDeposito); //Realiza a operacao de deposito;
 
 float sacar(int valorSaque); //Realiza a operacao de saque;
 
-void checasaldo(int valorSaldo); //Exibe o saldo disponivel.
+void checasaldo(); //Exibe o saldo disponivel.
