@@ -6,25 +6,26 @@
 
 void saudacao()
 {
-	entradastr("Olá, seja bem vindo ao IFBank v_2022"); //retorna o texto de um vetor de caracteres sem números
-	entradaint("Olá, seja bem vindo ao IFBank v_2022"); //retorna os numeros de um vetor de caracteres sem o texto
-	printf("!\n\nPara continuar, pressione qualquer tecla.");
+	entradastr("Seja bem vindo ao IFBank v_2022"); 
+	entradaint("Seja bem vindo ao IFBank v_2022");
+	printf("!\n\nComo esta eh a versao 2_2022 do IFBank, disponibilizamos um saldo de R$ 2022,00 para voce!\n\n");
+	printf("Para continuar, pressione qualquer tecla.");
 	getchar();
 }
 
 void azul()
 {
-	printf("\x1b[1;34m");
+	printf("color 01");
 }
 
 void verde()
 {
-	printf("\x1b[1;32m");
+	printf("color 02");
 }
 
 void vermelho()
 {
-	printf("\x1b[1;31m");
+	printf("color 04");
 }
 
 int validarsenha(char *senha)
