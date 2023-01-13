@@ -8,24 +8,23 @@ void saudacao()
 {
 	entradastr("Seja bem vindo ao IFBank v_2022"); 
 	entradaint("Seja bem vindo ao IFBank v_2022");
-	printf("!\n\nComo esta eh a versao 2_2022 do IFBank, disponibilizamos um saldo de R$ 2022,00 para voce!\n\n");
-	printf("Para continuar, pressione qualquer tecla.");
-	getchar();
 }
 
-void azul()
+void aviso()
 {
-	printf("color 01");
+	printf("!\n\nComo esta eh a versao 2_2022 do IFBank, disponibilizamos um saldo de R$ 2022,00 para voce!\n\n");
+	printf("Para continuar, pressione qualquer tecla.");
+	getch();
 }
 
 void verde()
 {
-	printf("color 02");
+	printf("COLOR 02");
 }
 
 void vermelho()
 {
-	printf("color 04");
+	printf("COLOR 04");
 }
 
 int validarsenha(char *senha)
