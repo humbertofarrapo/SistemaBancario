@@ -40,10 +40,10 @@ int main()
 			case 0:
 				fclose(arq);
 				vermelho();
-				printf("Obrigado por utilizar o IFBank! Até mais!\n");
+				printf("Obrigado por utilizar o IFBank! Ate mais!\n");
 				break;
 			default:
-				printf("Digite uma opção válida!\n");
+				printf("Digite uma opção valida!\n");
 		}
 	} while (opcao);
 	return 0;
