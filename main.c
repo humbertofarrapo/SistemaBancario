@@ -18,6 +18,7 @@ int main()
 	
 	verde();
 	saudacao();
+	aviso();
 	telalogin();
 
 	do {
