@@ -29,10 +29,10 @@ int main()
 		switch (opcao)
 		{
 			case 1:
-				fprintf(arq, "%f", depositar(usuarioPadrao.deposito));
+				fprintf(arq, "%f\n", depositar(usuarioPadrao.deposito));
 				break;
 			case 2:
-				fprintf(arq, "%f", sacar(usuarioPadrao.saque));
+				fprintf(arq, "%f\n", sacar(usuarioPadrao.saque));
 				break;
 			case 3:
 				verde();
