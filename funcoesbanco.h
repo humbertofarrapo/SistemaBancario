@@ -20,8 +20,8 @@ void telalogin(); //Exibe a interface de login;
 
 void opbanco(); //Exibe a interface de menu de opcoes;
 
-float depositar(int valorDeposito); //Realiza a operacao de deposito;
+float depositar(float valorDeposito); //Realiza a operacao de deposito;
 
-float sacar(int valorSaque); //Realiza a operacao de saque;
+float sacar(float valorSaque); //Realiza a operacao de saque;
 
 void checasaldo(); //Exibe o saldo disponivel.
