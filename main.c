@@ -35,7 +35,6 @@ int main()
 				fprintf(arq, "%f\n", sacar(usuarioPadrao.saque));
 				break;
 			case 3:
-				verde();
 				checasaldo(saldo);
 				break;
 			case 0:
