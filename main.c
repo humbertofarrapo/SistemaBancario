@@ -44,7 +44,7 @@ int main()
 				printf("Obrigado por utilizar o IFBank! Ate mais!\n");
 				break;
 			default:
-				printf("Digite uma opção valida!\n");
+				printf("Digite uma opcao valida!\n");
 		}
 	} while (opcao);
 	return 0;
